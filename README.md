@@ -10,6 +10,7 @@ You can *optionally* use a `CoreAffinityFix.ini` file (example included in the r
 * LoopInterval: The number of seconds to wait between each loop of setting the new core affinity (Default: 1).
 * CreateLog: When set to `true`, a `CoreAffinityFix.log` file with some good-to-know info will be generated. Note that the log will be generated when an error occurs, **even when this setting is not present**.
 
+---
 ### Notes
 * I originally made this for Splinter Cell Blacklist, which notoriously only uses 1 (!?!) core. But the dll is built in a way that allows it to be used on any executable, you just have to do the importing part.
 * You will notice that when logging, the new affinity mask will be a weird number. The program uses [SetProcessAffinityMask](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setprocessaffinitymask), which uses a bit mask. The log shows that mask, represented as an integer.
