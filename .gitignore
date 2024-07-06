@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/CoreAffinityFixer/Debug
+/CoreAffinityFixer/Release
+/CoreAffinityFixer/x64/Debug
+/Debug
+/Release
+/x64/Debug
