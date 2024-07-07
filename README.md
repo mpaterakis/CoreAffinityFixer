@@ -2,7 +2,7 @@
 A DLL tool that automatically and continually sets the affinity of an app to the maximum amount of available cores.
 
 ## Usage
-Only thing you need to do to enable the fix is placing the DLL in your app directory and importing the main export of the DLL (`FeedMeCores`). You can import this export on either the app/game's EXE itself, or another DLL that the executable imports, using [CFF Explorer](https://ntcore.com/explorer-suite), [DxWrapper](https://github.com/elishacloud/dxwrapper), or any other tool that can handle DLL injection/importing.
+All you need to do to enable the fix is place the DLL in your app directory and import the main export of the DLL (`FeedMeCores`). You can import this export on either the app/game's EXE itself, or another DLL that the executable imports, using [CFF Explorer](https://ntcore.com/explorer-suite), [DxWrapper](https://github.com/elishacloud/dxwrapper), or any other tool that can handle DLL injection/importing.
 
 **Regardless of what method you use to load the fix:** Place `CoreAffinityFixer.dll` on the same folder as the target exe or dll that the game uses.
 
